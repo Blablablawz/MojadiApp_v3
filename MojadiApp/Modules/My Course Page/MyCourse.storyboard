@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- My Course-->
+        <scene sceneID="hiF-O4-VXB">
+            <objects>
+                <navigationController storyboardIdentifier="rootCourse" id="aIj-tA-HKf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title=" My Course" image="course" selectedImage="course" id="NIh-SJ-QeV">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gN1-CE-IAb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="hQs-14-Uym"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1f5-mJ-Z5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="167"/>
+        </scene>
+        <!--My Course-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CourseViewController" customModule="MojadiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fZ1-qM-wpe">
+                                <rect key="frame" x="20" y="98" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.71372549019607845" green="0.9137254901960784" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9H9-cE-dRs"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="QtT-LR-0eV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-0Z-SsK">
+                                <rect key="frame" x="5" y="166" width="404" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fZ1-qM-wpe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="7Hr-Ts-y4X"/>
+                            <constraint firstItem="rZg-0Z-SsK" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Mvy-5S-AT1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rZg-0Z-SsK" secondAttribute="trailing" constant="5" id="NdR-LN-WkK"/>
+                            <constraint firstItem="rZg-0Z-SsK" firstAttribute="top" secondItem="fZ1-qM-wpe" secondAttribute="bottom" constant="20" id="XK1-ZK-kat"/>
+                            <constraint firstItem="rZg-0Z-SsK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="dOU-Uq-qgu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fZ1-qM-wpe" secondAttribute="trailing" constant="20" id="m8J-Aa-cxU"/>
+                            <constraint firstItem="fZ1-qM-wpe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vTC-ip-vCz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Course" id="rZp-RG-hXx"/>
+                    <connections>
+                        <outlet property="courseCollection" destination="fZ1-qM-wpe" id="SyJ-2o-6nX"/>
+                        <outlet property="tableProgress" destination="rZg-0Z-SsK" id="5r1-5J-TWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="166.74107142857142"/>
+        </scene>
+        <!--Learning Course-->
+        <scene sceneID="X0t-yl-XUM">
+            <objects>
+                <viewController storyboardIdentifier="video" id="Ysg-S7-Xhg" customClass="VideoViewController" customModule="MojadiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GrL-Hz-ueM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bahasa Inggris For Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-Sr-O32">
+                                <rect key="frame" x="20" y="278" width="189.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-76-25x">
+                                <rect key="frame" x="20" y="303" width="49" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Ob4-Dk-Aer"/>
+                                    <constraint firstAttribute="width" constant="49" id="W6Q-oz-l8n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mentor | 167 reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-Av-TQY">
+                                <rect key="frame" x="78" y="330" width="108" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-wx-aDu">
+                                <rect key="frame" x="123" y="414" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hanna Olive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4B-Za-UU8">
+                                <rect key="frame" x="77" y="305" width="78" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="arY-PQ-84P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OmD-Sr-O32" firstAttribute="leading" secondItem="arY-PQ-84P" secondAttribute="leading" constant="20" id="4nh-QU-tPu"/>
+                            <constraint firstItem="AEG-76-25x" firstAttribute="top" secondItem="OmD-Sr-O32" secondAttribute="bottom" constant="8" id="Chs-SK-bpO"/>
+                            <constraint firstItem="t4B-Za-UU8" firstAttribute="leading" secondItem="AEG-76-25x" secondAttribute="trailing" constant="8" id="GAr-FX-GGE"/>
+                            <constraint firstItem="AEG-76-25x" firstAttribute="leading" secondItem="arY-PQ-84P" secondAttribute="leading" constant="20" id="XyJ-Rn-cLD"/>
+                            <constraint firstItem="t4B-Za-UU8" firstAttribute="top" secondItem="OmD-Sr-O32" secondAttribute="bottom" constant="10" id="eFd-km-uQP"/>
+                            <constraint firstItem="gV7-Av-TQY" firstAttribute="top" secondItem="t4B-Za-UU8" secondAttribute="bottom" constant="8" id="uTL-QO-1hE"/>
+                            <constraint firstItem="gV7-Av-TQY" firstAttribute="leading" secondItem="AEG-76-25x" secondAttribute="trailing" constant="9" id="zDW-fK-DrR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Learning Course" id="wYN-f0-hTX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jy6-qy-sl8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="course" width="24" height="24"/>
+        <image name="profile" width="75" height="75"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

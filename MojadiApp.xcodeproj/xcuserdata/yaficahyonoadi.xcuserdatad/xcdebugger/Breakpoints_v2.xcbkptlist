@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6311A7C8-214E-41DF-8AF7-15E215162A75"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MojadiApp/Modules/Detail Payment/PackageInfoViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PackageInfoViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - cb4789f7545d44f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.containerInside.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - 38e9442382f72cec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.containerInside.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - dcf2ae1a04cb24ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.containerInside.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - fe15dd60dddaa488"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.containerInside.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - 5763d3d161ea66dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MojadiApp.PackageInfoViewCell"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "9D85473E-A0A1-470C-BBDF-77F1E215FB80 - 93612f9340a07c7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MojadiApp.PackageInfoViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MojadiApp.PackageInfoViewCell&gt;"
+                  moduleName = "MojadiApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yaficahyonoadi/Documents/Kampus%20Merdeka/MojadiAppProV2/MojadiApp/Modules/Detail%20Payment/PackageInfoViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
